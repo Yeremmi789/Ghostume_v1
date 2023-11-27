@@ -1,0 +1,180 @@
+<body>
+  <div class="caja-maestra">
+    <div class="caja-Padre">
+      <div class="titulo-productos">
+        <h1 title="aaaaaaa">Adultos Femeninos<!--- en oferta----></h1>
+        <div id="cambiar-flechas-productos">
+          <button id="flecha-izquierda"></button>
+          <button id="flecha-derecha">></button>
+        </div>
+      </div>
+      <div class="caja-productos">
+        <!-- <img src="assets/img/horror/FNF.jpg" alt=""> -->
+        <div class="producto" *ngFor="let item of items">
+          <!-- <img [src]="item.image" alt=""> -->
+          <a class="contenedor-img" (click)="prod_detalles(item.id)">
+            <figure>
+              <img src="{{ item.imagen }}" alt="" />
+              <div class="capa">
+                <h4><b>{{ item.titulo }}</b></h4>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit
+                  voluptatem asperiores quis corporis libero, iusto nisi, eos
+                  quidem facere non delectus distinctio officiis! Dolorum
+                  tenetur,
+                </p>
+              </div>
+            </figure>
+          </a>
+          <label id="categoria-juego" for="">{{ item.categoria }}</label>
+          <label id="titulo-producto" for="">{{ item.titulo }}</label>
+          <label id="precio-producto" for="">$500 MXN</label>
+        </div>
+
+        <!-- CARRUSEL UNITARIO -->
+
+        <!-- <div class="producto"  *ngFor="let item of items" >
+          <div class="contenedor-img">
+            <figure>
+              <div class="carrusel-imagenes-inner" [style.transform]="'translateX(' + (-slideIndex * 100) + '%)'">
+                <div class="carrusel-imagen" *ngFor="let imagen of items">
+                  <img [src]="imagen.imagen" alt="{{ imagen.titulo }}">
+                </div>
+              </div>
+              <div class="capa">
+                <h4>{{item.titulo}}</h4>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit
+                  voluptatem asperiores quis corporis libero, iusto nisi, eos
+                  quidem facere non delectus distinctio officiis! Dolorum
+                  tenetur, alias explicabo consequatur, eligendi at mollitia,
+                  incidunt eum quos odio dolore placeat! Fuga est vitae a
+                  cupiditate. Ipsa ea dolorum natus, repudiandae, nemo
+                  cupiditate deleniti quia architecto repellat minus facilis
+                  adipisci neque expedita nulla accusantium molestias asperiores
+                  voluptatibus esse consectetur eos! Sint facilis blanditiis
+                  dolores obcaecati? Doloremque in quis veritatis repellendus
+                  odio laborum. Delectus, ipsam?
+                </p>
+              </div>
+            </figure>
+          </div>
+          <label id="categoria-juego" for="">Categoria</label>
+          <label id="titulo-producto" for="">{{item.titulo}}</label>
+          <label id="precio-producto" for="">$500 MXN</label>
+          <button (click)="prevSlide()" class="carrusel-button">Anterior</button>
+          <button (click)="nextSlide()" class="carrusel-button">Siguiente</button>
+        </div> -->
+
+        <!-- CARRUSEL UNITARIO -->
+
+        <!-- <div class="producto"  *ngFor="let item of items" >
+          <div class="contenedor-img">
+            <figure>
+              <div class="carrusel-imagenes-inner" [style.transform]="'translateX(' + (-slideIndex * 100) + '%)'">
+                <div class="carrusel-imagen" *ngFor="let imagen of items">
+                  <img [src]="imagen.imagen" alt="{{ imagen.titulo }}">
+                </div>
+              </div>
+            </figure>
+          </div>
+          <label id="categoria-juego" for="">Categoria</label>
+          <label id="titulo-producto" for="">{{item.titulo}}</label>
+          <label id="precio-producto" for="">$500 MXN</label>
+        </div> -->
+
+        <!--  -->
+
+        <!-- <div class="producto">
+          <div class="carrusel-imagenes">
+            <div class="carrusel-imagenes-inner" [style.transform]="'translateX(' + (-slideIndex * 100) + '%)'">
+              <div class="carrusel-imagen" *ngFor="let imagen of items">
+                <img [src]="imagen.imagen" alt="{{ imagen.titulo }}">
+              </div>
+            </div>
+          
+            <button (click)="prevSlide()" class="carrusel-button">Anterior</button>
+            <button (click)="nextSlide()" class="carrusel-button">Siguiente</button>
+          </div>
+        </div>
+
+        <div class="producto">
+          <div class="carrusel-imagenes">
+            <div class="carrusel-imagenes-inner" [style.transform]="'translateX(' + (-slideIndex * 100) + '%)'">
+              <div class="carrusel-imagen" *ngFor="let imagen of items">
+                <img [src]="imagen.imagen" alt="{{ imagen.titulo }}">
+              </div>
+            </div>
+          
+            <button (click)="prevSlide()" class="carrusel-button">Anterior</button>
+            <button (click)="nextSlide()" class="carrusel-button">Siguiente</button>
+          </div>
+        </div> -->
+      </div>
+
+      <div class="titulo-productos">
+        <h1 title="aaaaaaa">Adultos Masculinos<!--- en oferta----></h1>
+        <div id="cambiar-flechas-productos">
+          <button id="flecha-izquierda"></button>
+          <button id="flecha-derecha">></button>
+        </div>
+      </div>
+      <div class="caja-productos">
+        <!-- <img src="assets/img/horror/FNF.jpg" alt=""> -->
+        <div class="producto" *ngFor="let item of man">
+          <!-- <img [src]="item.image" alt=""> -->
+          <a class="contenedor-img" (click)="prod_detalles(item.id)">
+            <figure>
+              <img src="{{ item.imagen }}" alt="" />
+              <div class="capa">
+                <h4>
+                  <b>{{ item.titulo }}</b>
+                </h4>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit
+                  voluptatem asperiores quis corporis libero, iusto nisi, eos
+                  quidem facere non delectus distinctio officiis! Dolorum
+                </p>
+              </div>
+            </figure>
+          </a>
+          <label id="categoria-juego" for="">{{ item.categoria }}</label>
+          <label id="titulo-producto" for="">{{ item.titulo }}</label>
+          <label id="precio-producto" for="">$500 MXN</label>
+        </div>
+      </div>
+
+      <div class="titulo-productos">
+        <h1 title="aaaaaaa">Infantiles<!--- en oferta----></h1>
+        <div id="cambiar-flechas-productos">
+          <button id="flecha-izquierda"></button>
+          <button id="flecha-derecha">></button>
+        </div>
+      </div>
+      <div class="caja-productos">
+        <!-- <img src="assets/img/horror/FNF.jpg" alt=""> -->
+        <div class="producto" *ngFor="let item of kids">
+          <!-- <img [src]="item.image" alt=""> -->
+          <a class="contenedor-img" (click)="prod_detalles(item.id)">
+            <figure>
+              <img src="{{ item.imagen }}" alt="" />
+              <div class="capa">
+                <h4>
+                  <b>{{ item.titulo }}</b>
+                </h4>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit
+                  voluptatem asperiores quis corporis libero, iusto nisi, eos
+                  quidem facere non delectus distinctio officiis! Dolorum
+                </p>
+              </div>
+            </figure>
+          </a>
+          <label id="categoria-juego" for="">{{ item.categoria }}</label>
+          <label id="titulo-producto" for="">{{ item.titulo }}</label>
+          <label id="precio-producto" for="">$500 MXN</label>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>

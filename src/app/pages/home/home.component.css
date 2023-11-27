@@ -1,0 +1,249 @@
+* {
+    /* background-color: #a609dd; */
+    /* background-color: var(--morado); */
+    padding: 20px 0 0 0;
+    margin: 0;
+    /* background: linear-gradient(blue, pink); */
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #fff;
+}
+
+body{
+    height: auto;
+    width: 100%;
+}
+
+:root{
+    /* --violetaOscuro:  #5a1264; */
+    /* --violetaOscuro:  #000000; */
+    --blancoLETRAS: #fff;
+    --morado: #a609dd;
+    --negroLetras: #000000;
+    --fondoNEGRO-BARRA: #000000;
+}
+
+
+#img-logo{
+    width: 70px;
+    height: 70px;
+    position: relative;    
+    float: left;
+    margin: 0px 0px 0px 50px;
+    background-color: var(--violetaOscuro);
+    border-radius: 50%;
+}
+
+/* Por si deseo Poner Una FOTO DE PERFIL En lugar del puro nombre del usuario */
+#img-logo2{
+    width: 50px;
+    height: 50px;
+    position: relative;    
+    margin: 0px 30px 0px 30px;
+    float: right;
+    background-color: var(--blancoLETRAS);
+    border-radius: 50%;
+    top: 10px;
+}
+
+#barra-sup ul li a {
+    text-decoration: none;
+    color: var(--blancoLETRAS);
+    padding: 10px 10px 5px 10px;
+    background-color: var(--violetaOscuro);
+}
+
+#barra-sup ul li a:hover {
+    transition: all 300ms;
+    border-bottom: 5px solid var(--blancoLETRAS);
+}
+
+.Portada{
+    /* background-image: url(../../../assets/img/Fondo-portada1.jpg); */
+    /* background-image: url(../../../assets/img/fondo5.jpg); */
+    /* background-size: 100%; */
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    /* height: auto; */
+    /* height: 100vh; */
+    /* position: relative; */
+    background-color: rgb(56, 35, 78);
+
+    
+}
+
+
+
+.portada-hijo{
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    /* height: auto; */
+    max-height: 600px;
+    background-color: transparent;
+    color: var(--blancoLETRAS);
+}
+.portada-hijo h1, .portada-hijo label, .portada-hijo p{
+    background-color: transparent;
+}
+.portada-hijo h1{
+   font-family: Arial, Helvetica, sans-serif; 
+}
+.portada-hijo p{
+    text-align: justify;
+    margin: 30px 0px;
+}
+.portada-hijo label{
+    display: block;
+    width: 100%;
+}
+
+.Portada #emblema3{
+    background-color: transparent;
+    position: relative;
+    /* float: right; */
+    top: 2%;
+    width: 200px;
+    /* height: 200px; */
+    left: 19%;
+    
+}
+
+/* .Portada #pers1-portada{
+    background-color: transparent;
+    position: relative;
+    float: right;
+    bottom: 0.46%;
+    width: 700px;
+    height: 101%;   
+} */
+
+.portada-nieto{
+    width: 100%;
+    height: auto;
+    z-index: 90;
+}
+
+.portada-nieto2{
+    width: 100%;
+    height: auto;
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+}
+
+.portada-nieto2 img{
+    width: 70%;
+    height: auto;
+    z-index: 80;
+}
+
+#modelo1{
+    position: relative;
+    left: 60px;
+    z-index: 70;
+}
+
+#modelo2{
+    position: relative;
+    right: 100px;
+    z-index: 70;
+}
+#modelo3{
+    position: relative;
+    right: 260px;
+    z-index: 50;
+}
+
+@media(max-width: 1250px){
+    .Portada{
+        display: flex;
+        flex-direction: column;
+    }
+    .portada-hijo{
+        display: flex;
+        justify-content: center;
+        margin-left: 50px;
+    }
+
+    #img-logo{
+        margin-top: 300px;
+    }
+}
+
+@media(max-width:1200px){
+
+    #modelo1{
+        left: 150px;
+    }
+    
+    #modelo2{
+        left: 150px;
+    }
+
+    #modelo3{
+        visibility: hidden;
+    }
+}
+
+@media(max-width:880px){
+    #modelo1{
+        left: 250px;
+    }
+    #modelo2{
+        visibility: hidden;
+        right: 300px;
+    }
+
+    #modelo2{
+        right: 500px;
+    }
+}
+
+@media(max-width:880px){
+    *{
+        padding: 0;
+        width: 100%;
+    }
+
+    .Portada{
+        height: 100vh;
+    }
+
+    p{
+        width: auto;
+    }
+
+    .portada-hijo{
+        flex-direction: column;
+    }
+
+    .portada-nieto2{
+        width: 80%;
+        display: flex;
+        justify-content: center;
+    }
+
+    #modelo1{
+        position: relative;
+        top: 10%;
+        /* width: 200px; */
+        width: 280px;
+        /* left: 5%; */
+        left: 40%;
+        /* right: 80%; */
+    }
+    #modelo2{
+        width: 100%;
+        right: 100%;
+    }
+    #modelo3{
+        width: 100%;
+        right: 100%;
+    }
+
+    .Portada #emblema3{
+        left: 20%;
+    }
+}

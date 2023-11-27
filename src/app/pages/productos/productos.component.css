@@ -1,0 +1,334 @@
+:root {
+    --margin-top: 60px;
+    --margin-right: 20px;
+    --margin-bottom: 10px;
+    --margin-left: 20px;
+}
+
+
+body {
+    height: auto;
+    background-color: #121212;
+
+}
+
+/* AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA */
+.Buscador {
+    /* width: 100%; */
+    height: 70px;
+    background-color: blueviolet;
+    background-color: #121212;
+    background-color: #121212;
+    display: flex;
+    justify-content: center;
+    /* position: fixed; */
+    z-index: 10;
+    padding-top: 90px;
+
+}
+
+.Buscador .cont-buscador {
+    width: 80%;
+    /* background-color: #2a2a2a; */
+    padding: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.Buscador .cont-buscador #barra-input {
+    width: 20%;
+    background-color: #202020;
+
+    border-radius: 50px;
+    display: flex;
+    padding: 5px;
+    margin-right: 20px;
+
+
+    align-items: center;
+}
+
+
+
+.Buscador .cont-buscador #barra-input img {
+    width: 15px;
+    height: 15px;
+    padding-right: 10px;
+    padding-left: 5px;
+
+}
+
+.Buscador .cont-buscador #barra-input input {
+    width: 80%;
+    background-color: yellow;
+    background-color: #202020;
+    /* border-color: yellow; */
+    /* QUITAR BORDE AL INPUT */
+    border: 0;
+    /* QUITAR BORDE AL INPUT */
+
+    /* QuITAR FOCUS AL INPUT AL SELECIONARLO */
+    outline: 0px;
+    /* QuITAR FOCUS AL INPUT AL SELECIONARLO */
+
+    color: #ffff;
+    height: 30px;
+}
+
+
+.select-colors {
+    /* background-color: #f2f2f2; */
+    background-color: #271b29;
+    box-shadow: 0 0 2px 2px #ddd;
+    border: none;
+    border-radius: 5px;
+    /* color: #333; */
+    color: #ffff;
+    font-size: 16px;
+    padding: 10px;
+    /* width: 200px; */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+    cursor: pointer;
+}
+
+.select-colors:focus {
+    outline: none;
+    /* box-shadow: 0 0 2px 2px #ddd; */
+    box-shadow: 0 0 2px 2px #0efbfb;
+}
+
+
+
+.Buscador .cont-buscador label {
+    margin-right: 20px;
+    color: #ffff;
+    /* color: var(--letrasNegro); */
+
+}
+
+.cont-buscador #busqueda-btn {
+    width: 60px;
+    font-size: 15px;
+}
+
+#busqueda-btn {
+    background-color: blue;
+}
+
+#caja-migas-all {
+    display: block;
+    /* background-color: rgb(238, 238, 238); */
+    padding: 10px 0px 10px 0px;
+    position: relative;
+    right: 35px;
+    right: 80px;
+}
+
+
+.espacioAbajo-Buscador {
+    height: 70px;
+    /* background-color: #fff; */
+    background-color: #271b29;
+}
+
+.caja-maestra {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    /* background-color: red; */
+    background-color: #121212;
+    padding-top: 60px;
+}
+
+.caja-maestra .caja-Padre {
+    width: 80%;
+    /* background-color: aqua; */
+    padding: 15px;
+    position: relative;
+
+
+}
+
+.caja-maestra .caja-Padre h1 {
+    /* background-color: blue; */
+    /* display: inline-block; */
+    font-size: 20px;
+    color: #ffff;
+}
+a .producto{
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.caja-maestra .caja-Padre .titulo-productos {
+    display: flex;
+    justify-content: space-between;
+}
+
+.caja-maestra .caja-Padre .titulo-productos button {
+    /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
+    /* position: absolute; */
+    /* float: right; */
+    padding: 5px;
+    margin-right: 10px;
+}
+
+.caja-maestra .caja-Padre .titulo-productos #flecha-derecha {
+    margin-right: 20px;
+
+}
+
+.caja-maestra .caja-Padre .caja-productos {
+    display: flex;
+    width: 100%;
+    /* background-color: rgb(61, 42, 165); */
+    padding: 15px 0px;
+    justify-content: space-around;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.caja-maestra .caja-Padre .caja-productos .producto {
+    /* background-color: azure; */
+    width: 200px;
+    height: 400px;
+    height: auto;
+    cursor: pointer;
+}
+
+.caja-maestra .caja-Padre .caja-productos img {
+    width: 100%;
+    width: 90%;
+    width: 200px;
+    height: 250px;
+    height: 290px;
+
+    cursor: pointer;
+    /* margin: 10px; */
+}
+
+
+/* .caja-maestra .caja-Padre .caja-productos .producto:hover { */
+/* background-color: red; */
+/* } */
+
+.contenedor-img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; */
+    /* height: 100vh; */
+}
+
+.contenedor-img figure {
+    position: relative;
+    /* height: 250px; */
+    width: 300px;
+    overflow: hidden;
+}
+
+.contenedor-img figure img {
+    width: 100%;
+    height: 100%;
+    transition: all 500ms ease-out;
+}
+
+.contenedor-img figure .capa {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    /* background: rgba(0, 103, 123, 0.7); */
+    /* background: rgba(90, 90, 90, 0.7); */
+    background: rgba(10, 10, 10, 0.7);
+    transition: all 500ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+}
+
+.contenedor-img figure:hover>.capa {
+    opacity: 1;
+    visibility: visible;
+}
+
+.contenedor-img figure:hover>.capa h4 {
+    margin-top: 70px;
+    margin-bottom: 15px;
+    /* transition: all 500ms; */
+}
+
+.contenedor-img figure:hover>img {
+    transform: scale(1.3);
+}
+
+.contenedor-img figure .capa h4 {
+    color: #fff;
+    font-weight: 400;
+    margin-bottom: 120px;
+    transition: all 500ms ease-out;
+    margin-top: 30px;
+}
+
+.contenedor-img figure p {
+    color: #ffff;
+    font-size: 15px;
+    line-height: 1.5;
+    width: 100%;
+    max-width: 220px;
+    margin: auto;
+}
+
+.caja-maestra .caja-Padre .caja-productos label {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: block;
+    padding: 5px 0px;
+    color: #ffff;
+}
+
+.caja-maestra .caja-Padre .caja-productos #titulo-producto {
+    font-weight: bold;
+}
+
+.caja-maestra .caja-Padre .caja-productos .producto #categoria-juego {
+    font-size: 15px;
+    color: #616160;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+}
+
+.caja-maestra .caja-Padre .caja-productos #precio-producto {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+
+
+.carrusel-imagenes {
+    overflow: hidden;
+    position: relative;
+}
+
+.carrusel-imagenes-inner {
+    display: flex;
+    transition: transform 0.3s ease;
+}
+
+.carrusel-imagen {
+    flex: 0 0 100%;
+    /* flex: 0 0 33.33%; */
+    width: 100%;
+}
+
+.carrusel-imagen img {
+    max-width: 100%;
+    height: auto;
+}
+
+.carrusel-button {
+    cursor: pointer;
+}
